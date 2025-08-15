@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  list-style: none;
+  padding-left: 10px;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  gap: 8px;
+}
+
+.brand .logo {
+  width: 60px;
+  height: auto;
+}
+
+nav ul li {
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.container {
+  min-height: 73vh;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url('bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4); /* dark overlay to improve contrast */
+}
+
+.bottom {
+  position: sticky;
+  height: 100px;
+  background-color: black;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+#progressBar{
+    width: 80%;
+    margin-top: 10px;
+}
+.icons {
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.songItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+  
+}
+
+.songItem {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.songItem:hover {
+  background: #eaeaea;
+}
+
+.songItem img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.songItem span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.songlistplay {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.timestamp {
+  font-size: 14px;
+  color: #555;
+  margin-left: 12px;
+}
+
+.fa-circle-play {
+  color: #007bff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.fa-circle-play:hover {
+  transform: scale(1.2);
+}
